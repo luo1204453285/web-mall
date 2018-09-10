@@ -3,20 +3,6 @@
 
 web 视频播放的小项目
 
-# 项目地址
-
-[阿里云(测试机用户)](https://stage.vpclub.cn/youxuan/web/app/?userId=931858813531512834&storeId=null#/home)
-[内网(测试机用户)](http://stage.vpclub.cn/youxuan/web/app/?userId=931858813531512834&storeId=null#/home)
-
-# 项目资源
-
-[原型地址](https://pro.modao.cc/app/38971a232b413a216e8e0a3a89823b9f13669c89#screen=sc18201a28269c49b27ae7c)
-[接口文档](git@gitlab.vpclub:youxuan/documents.git)
-
-# 项目描述
-
-这是一个接入新平台接口的商城webapp。ui库选用[vux](https://vux.li/#/zh-CN/README)
-
 # 运行
 
 ## 本地服务
@@ -28,10 +14,6 @@ web 视频播放的小项目
   npm run build
 
 # 项目目录
-
-## src/config/index.js
-
-  项目数据配置：APPID，客服电话，本地开发接口请求地址
 
 ## src/assets/images
 
