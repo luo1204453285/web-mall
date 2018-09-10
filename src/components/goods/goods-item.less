@@ -1,0 +1,133 @@
+
+@import '../../assets/less/theme.less';
+@import '../../assets/less/mixin.less';
+.goods-item-wrapper {
+    margin-top: 0.1rem;
+    .supplier-name {
+        margin: 0 @page-space;
+        height: 0.8rem;
+        line-height: 0.8rem;
+        font-size: 0;
+        background: #fff;
+        .border-1px-b();
+        .icon-checker {
+            margin-right: 0.24rem;
+        }
+        .icon-supplier-logo {
+            margin-right: 0.14rem;
+        }
+        .text {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 0.28rem;
+            color: #353535;
+        }
+    }
+    .goods {
+        background: #fff;
+        .goods-item {
+            display: flex;
+            height: 2.3rem;
+
+            .checker {
+                height: 0.98rem;
+                // padding: 0.24rem 0 0.24rem 0.24rem;
+                padding: 0.15rem 0 0.15rem 0rem;
+                box-sizing: content-box;
+            }
+            .thumbnail {
+                flex:  0 0 1.19rem;
+                // width: 0.98rem;
+                height: 1.19rem;
+                padding: 0.15rem;
+                box-sizing: content-box;
+                position: relative;
+                .thumbnail-statusImg{
+                    position: absolute;
+                    top: 0.15rem;
+                    width: 1.19rem;
+                    height: 1.19rem;
+                }
+            }
+
+            .info {
+                position: relative;
+                flex: 1;
+                width: 0;
+                padding: 0.36rem 0rem 0.24rem 0;
+                margin-right: .24rem;
+                .border-1px-b();
+               
+                
+                .title {
+                    height: 0.8rem;
+                    line-height: 0.4rem;
+                    font-size: 0.28rem;
+                    color: #353535;
+                    width: 4.3rem;
+                }
+                .skus {
+                    height: 0.5rem;
+                    line-height: 0.50rem;
+                    font-size: 0;
+                    color: #999999;
+                    .sku-item {
+                        margin-right: 0.6rem;
+                        font-size: 0.2rem;
+                    }
+                }
+                .count {
+                    position: absolute;
+                    top: 0.36rem;
+                    right: 0;
+                    float: right;
+                    font-size: 0.2rem;
+                    color: #333333;
+                }
+                .amount {
+                    line-height: 0.46rem;
+                    font-size: 0.28rem;
+                    color: #696969;
+                   
+                    .change-amount {
+                        float: right;
+                        height: .56rem;
+                        font-size: 0;
+                        border: 1px solid @theme-bd;
+                        background: #FFFFFF;
+                        .reduce,
+                        .plus {
+                            display: inline-block;
+                            width: .6rem;
+                            height: 100%;
+                            // line-height: 0.37rem;
+                            line-height: .46rem;
+                            vertical-align: middle;
+                            text-align: center;
+                            // border: 1px solid #999;
+                            // border-radius: 0.04rem;
+                            font-size: 0.48rem;
+                            color: @theme-bd;
+                        }
+                        .amount {
+                            display: inline-block;
+                            width: 1.2rem;
+                            height:100%;
+                            vertical-align: middle;
+                            text-align: center;
+                            border: none;
+                            border-left: 1px solid @theme-bd;
+                            border-right: 1px solid @theme-bd;
+                            font-size: 0.24rem;
+                            color: @theme-bd;
+                            
+                        }
+                    }
+                }
+            }
+            &:nth-last-of-type(1) .info{
+                .border-none()
+            }
+        }
+    }
+}

@@ -1,0 +1,189 @@
+@import './mixin.less';
+@import './theme.less';
+.vux-cell-box { //主要是针对broadband-info页面的选择
+    padding: 0;
+    background: #fff;
+    &::before{
+        display: none;
+    }
+    .weui-cell{
+        height: 0.98rem;
+        padding: 0;
+        font-size: 0.28rem;
+        color: #666666;
+        .border-1px-b();
+        .weui-cell__hd{
+            .weui-label{
+                width: auto;
+            }
+        }
+        .weui-cell__ft{
+            margin: 0 10px;
+            &::after {
+            height: 9px;
+            width: 9px;
+            border-width: 1px 1px 0 0;
+            border-color: #999;
+        }
+        }
+    }
+}
+.picker-group{
+    .vux-cell-box:last-child{
+        .weui-cell:after{
+            display: none;
+        }
+    }
+    .vux-datetime{
+         height: 0.98rem;
+        padding: 0 @page-space;
+        background: #fff;
+        font-size: 0.28rem;
+        color: #666666;
+        .weui-cell__ft{
+            padding-right: 33px;
+            &:after {
+            right: @page-space;
+            height: 9px;
+            width: 9px;
+            border-width: 1px 1px 0 0;
+            border-color: #999;
+        }   
+        }
+    }
+}
+.weui-dialog__bd{
+    &>div{
+        padding-bottom: 0.2rem;
+        line-height: 0.35rem;
+        font-size: 0.28rem;
+        color: #353535;
+    }
+}
+.weui-dialog__btn{
+    font-size: 0.32rem;;
+    color: @theme;
+}
+
+.vux-toast .weui-toast .weui-toast__content{
+    padding:0.26rem 0.3rem;
+}
+.vux-alert{
+    .profitTips{
+        text-align: left;
+        padding-left: 1em;
+        line-height:1.5em;
+        position: relative;
+        span{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+.userSetmeal{
+    .weui-progress{
+        .weui-progress__bar{
+            height: 0.14rem;
+            background-color: #f2f2f2;
+            // border-radius: 0.14rem !important;
+            overflow: hidden;
+
+            .weui-progress__inner-bar{
+                background-image: @theme-linear-gradient;
+                // border-radius: 0.14rem;
+            }
+        }
+        
+    }
+}
+
+#addClerk{
+    .input-sec{
+        div{
+            height:0.98rem;
+            .weui-cells{
+                height:100%;
+                margin-top:0;
+                .weui-cell__bd:after{
+                    width:0.56rem;
+                    height:0.56rem;
+                    // .bg-img('number_down');
+                    background-size:100%;
+                    border:none;
+                    margin-top: -0.25rem;
+                    -webkit-transform: inherit;
+                    transform: inherit;
+                }
+                .noSelect{
+                    .weui-select{
+                        color:#d8d8d8 !important;
+                    }
+                }
+                .weui-select{
+                    height:100%;
+                    padding-left: 0.26rem;
+                    font-size:0.28rem;
+                }
+               
+            }
+            .weui-cells:before{
+                border-top:none;
+            }
+        }
+    }
+}
+.clerkDetail{
+    .clerkDetail-selItem{
+        .weui-cells{
+            margin-top:0;
+            font-size: 0.28rem;
+            .vux-selector{
+                padding-left:0;
+                .weui-cell__bd{
+                    text-align: right;
+                    .weui-select{
+                        direction: rtl;
+                    }
+                }
+                .weui-cell__bd:after{
+                   width:0.56rem;
+                    height:0.56rem;
+                    // .bg-img('number_down');
+                    background-size:100%;
+                    border:none;
+                    margin-top: -0.25rem;
+                    -webkit-transform: inherit;
+                    transform: inherit;
+                    right:-4px;
+                }
+                
+            }
+        }
+        .weui-cells:before{
+            display: none;
+        }
+    }
+}
+.weui-loadmore__tips{
+    background-color:@theme-bg !important;
+}
+.detailload .weui-loadmore__tips {
+    background-color:#fff !important;
+}
+.vux-slider > .homedots.vux-indicator.vux-indicator-center {
+    bottom: .15rem;
+} 
+.vux-slider > .homedots.vux-indicator > a {
+    margin-left: .26rem;
+}
+.vux-slider > .homedots.vux-indicator > a > .vux-icon-dot {
+    background: #F9F9F9;
+}
+.vux-slider > .homedots.vux-indicator > a > .vux-icon-dot.active {
+    background: @theme;
+}
+
+.pswp__button--fs { //设置图片预览的全屏按钮隐藏（华为手机全屏有问题，标题没有全覆盖）
+    display: none !important; 
+}
